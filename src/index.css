@@ -1,0 +1,63 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #9882e7d7;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+}
+body .container .title {
+  font-family: 'YellowTail', sans-serif;
+  font-size: 32pt;
+  color: white;
+}
+body .container .task-complete {
+  text-decoration: line-through;
+}
+body .container .show-edit {
+  display: none;
+}
+body .container form {
+  width: 100%;
+  display: flex;
+}
+body .container form input[type="text"] {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #f87676;
+  border-radius: 5px 0 0 5px;
+  padding: 5px;
+  outline-color: #b31947;
+  font-size: 14pt;
+  box-shadow:0 0 10px blue;
+  margin-right:5px;
+}
+body .container form button {
+  background-color: #d5cedd;
+  color: #fff;
+  border: 0;
+  box-shadow:0 0 10px blue;
+  padding: 0 20px;
+  border-radius: 0 5px 5px 0;
+  font-size: 14pt;
+}
+body .container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+body .container table td:first-child {
+  table-layout: fixed;
+  width: 20px;
+}
+body .container table td:nth-child(2) {
+  padding: 10px 20px;
+  font-size: 14pt;
+}
+body .container table tr:nth-child(even) {
+  background-color: #1d1aeb;
+}
